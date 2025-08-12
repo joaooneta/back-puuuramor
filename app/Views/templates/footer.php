@@ -1,4 +1,4 @@
-<footer class="bg-dark text-light py-4 mt-5">
+<footer class="text-light py-4 mt-5">
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-3">
@@ -9,27 +9,27 @@
             <div class="col-md-4 mb-3">
                 <h5>Categorias</h5>
                 <ul class="list-unstyled">
-                    <li><a href="/adotar" class="text-light">Adotar</a></li>
-                    <li><a href="/loja" class="text-light">Loja</a></li>
-                    <li><a href="/resgates" class="text-light">Resgates</a></li>
-                    <li><a href="/quero_ajudar" class="text-light">Ajude</a></li>
-                    <li><a href="/parceiros" class="text-light">Adotar</a></li>
-                    <li><a href="/contatos" class="text-light">Contatos</a></li>
-                    <li><a href="/apadrinhar" class="text-light">Apadrinhar</a></li>
-                    <li><a href="/transparencia" class="text-light">Transparencia</a></li>
-                    <li><a href="/politica_de_adocao" class="text-light">Política de Adoção</a></li>
+                    <li><a href="<?= base_url('adotar') ?>" class="text-light">Adotar</a></li>
+                    <li><a href="<?= base_url('loja') ?>" class="text-light">Loja</a></li>
+                    <li><a href="<?= base_url('resgates') ?>" class="text-light">Resgates</a></li>
+                    <li><a href="<?= base_url('quero_ajudar') ?>" class="text-light">Ajude</a></li>
+                    <li><a href="<?= base_url('parceiros') ?>" class="text-light">Adotar</a></li>
+                    <li><a href="<?= base_url('contatos') ?>" class="text-light">Contatos</a></li>
+                    <li><a href="<?= base_url('apadrinhar') ?>" class="text-light">Apadrinhar</a></li>
+                    <li><a href="<?= base_url('transparencia') ?>" class="text-light">Transparência</a></li>
+                    <li><a href="<?= base_url('politica_de_adocao') ?>" class="text-light">Política de Adoção</a></li>
                 </ul>
             </div>
             <div class="col-md-4 mb-3">
                 <h5>Contato</h5>
                 <ul class="list-unstyled">
                     <li>WhatsApp: <a href="https://api.whatsapp.com/send?phone=5551981536015"
-                                     class="text-light text-decoration-underline">(51) 98153-6015</a>
+                            class="text-light text-decoration-underline">(51) 98153-6015</a>
                     </li>
                     <li>Instagram: <a href="https://www.instagram.com/projeto.puuuramor/"
-                                      class="text-light text-decoration-underline">@puuuramor</a></li>
+                            class="text-light text-decoration-underline">@projeto.puuuramor</a></li>
                     <li>Facebook: <a href="https://www.facebook.com/projeto.puuuramor/"
-                                     class="text-light text-decoration-underline">@puuuramor</a></li>
+                            class="text-light text-decoration-underline">Projeto Puuur Amor</a></li>
                 </ul>
             </div>
 

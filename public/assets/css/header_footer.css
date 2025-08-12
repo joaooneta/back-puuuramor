@@ -11,9 +11,11 @@ body {
   color: white !important;
   transition: color 0.3s ease-in-out;
 }
+
 .nav-link:hover {
   color: #ffffffa4 !important;
 }
+
 .logo {
   width: 60px;
   height: 60px;
@@ -27,11 +29,13 @@ body {
   display: block;
   margin-left: 0;
 }
+
 .navbar-brand {
   color: white;
   padding: 0px;
   margin: 0 20px;
 }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -39,21 +43,27 @@ body {
   width: 100%;
   z-index: 10;
   background-color: #8c7db1;
+
 }
+
 .navbar-toggler {
   border: 1px solid #ffffff66;
 }
+
 .navbar-brand,
 .nav-link {
   color: white !important;
   transition: color 0.3s ease-in-out;
 }
+
 .nav-link:hover {
   color: #ffffffa4 !important;
 }
+
 nav {
   transition: background-color 0.3s ease-in-out;
 }
+
 .navbar ul {
   text-align: end;
 }
@@ -66,13 +76,27 @@ main,
   flex: 1 0 auto;
 }
 
+#main {
+  margin-top: 80px;
+}
+
 /* Rodapé fixo no final da tela */
-.footer {
-  background-color: #c6b8e6;
+footer {
+  background-color: #8C7DB1;
   color: #ffffff;
   padding: 20px;
   margin-top: auto;
-  /* Isso o empurra para o final */
+  width: 100%;
+  text-align: left;
+}
+
+
+footer a {
+  text-decoration: none;
+}
+
+.mt-5 {
+  margin-top: 0rem !important;
 }
 
 @media (max-width: 1400px) {
@@ -85,12 +109,14 @@ main,
   .navbar ul li a {
     border-radius: 5px;
   }
+
   .navbar ul {
     margin-top: 10px;
     border-radius: 10px !important;
     text-align: center;
     background-color: #b5a3e0;
   }
+
   .navbar ul li:last-child {
     border-bottom: none;
   }
@@ -127,5 +153,6 @@ main,
 }
 
 #resgates-section {
-  margin-top: 80px; /* Adjusted for fixed navbar */
+  margin-top: 80px;
+  /* Adjusted for fixed navbar */
 }

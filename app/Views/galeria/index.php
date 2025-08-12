@@ -1,5 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,12 @@
 
     <title>Galeria | Puuuramor</title>
 </head>
+
 <body>
     <?php echo View('header.php') ?>
 
-    
-    <section id="galeria-posts" class="container py-5 text-center">
+
+    <section id="main" class="container py-5 text-center">
         <h2 class="mt-5 mb-3">Galeria</h2>
         <p class="mb-5">Confira os registros dos nossos bichinhos!</p>
 
@@ -26,7 +28,7 @@
         <?php endif; ?>
 
         <div class="row">
-            <?php foreach($posts as $post): ?>
+            <?php foreach ($posts as $post): ?>
                 <div class="col-12 col-md-6 col-lg-4 mb-2">
                     <div class="card">
                         <img src="<?= base_url('uploads/galeria/' . $post['imagem']) ?>" alt="<?= esc($post['titulo']) ?>" class="card-img-top" style="object-fit: cover; height: 350px;">
@@ -39,8 +41,8 @@
             <?php endforeach ?>
         </div>
     </section>
+    <?= view('templates/footer') ?>
+
 </body>
+
 </html>
-
-<?php echo View('templates/footer') ?>
-
