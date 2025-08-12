@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Politica_de_adocao extends BaseController
+class Politica_de_Adocao extends BaseController
 {
     public function index()
     {

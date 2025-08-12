@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +17,10 @@
         const BASE_URL = "<?= base_url() ?>";
     </script>
 </head>
+
 <body>
-    <?php echo View('header.php')?>
-    <section id="nao-adotaveis" class="container py-5 text-center">
+    <?php echo View('header.php') ?>
+    <section id="main" class="container py-5 text-center">
         <h2 id='titulo' class="mt-5 mb-3">Apadrinhar</h2>
         <p class="mb-5">Esses animais fazem parte da nossa família e precisam de cuidados contínuos.</p>
 
@@ -28,7 +30,7 @@
         <?php endif; ?>
 
         <div class="row">
-            <?php foreach($pets as $pet): ?>
+            <?php foreach ($pets as $pet): ?>
                 <div class="col-12 col-md-6 col-lg-4 mb-2">
                     <div class="card">
                         <img src="<?= base_url('uploads/apadrinhar/' . $pet['imagem']) ?>" alt="Descrição da imagem" class="card-img-top" style="object-fit: cover; height: 350px;">
@@ -64,7 +66,7 @@
         </div>
     </section>
 </body>
+
 </html>
 
 <?php echo View('templates/footer') ?>
-

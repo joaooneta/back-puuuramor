@@ -47,37 +47,6 @@
             <?php endforeach ?>
         </div>
 
-        <button class="btn btn-secondary mt-4" id="load-more">Veja mais</button>
-    </div>
-
-    <section id="contato" class="bg-white py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="fw-bold">Fale com a Gente</h2>
-                <p class="lead">Tem alguma dúvida, quer ajudar ou precisa conversar com a gente? Escolha o assunto e entre em contato pelo e-mail correspondente. Vamos adorar ouvir você!</p>
-                <a href="/contatos" class="btn btn-success btn-lg mt-3 px-4">Contatos</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal de Saiba Mais -->
-    <div class="modal fade" id="saiba-mais" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal-title">Produto</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
-                <div class="modal-body">
-                    <p id="modal-description">Descrição do produto</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" target="_blank" id="link-compra">
-                        <button class="btn btn-success">Ir para compra</button>
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
 
 </body>
