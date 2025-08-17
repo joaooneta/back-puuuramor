@@ -26,7 +26,7 @@
                         <a class="nav-link" href="<?= base_url('loja') ?>">Loja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('parceiros') ?>">Apoiadores</a>
+                        <a class="nav-link" href="<?= base_url('parceiro') ?>">Apoiadores</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('contatos') ?>">Contatos</a>

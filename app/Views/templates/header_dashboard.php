@@ -16,6 +16,7 @@
         <li class="nav-item"><a class="nav-link" href="<?= base_url('adotar/listar') ?>">Adotar</a></li>
         <li class="nav-item"><a class="nav-link" href="<?= base_url('apadrinhar/listar') ?>">Apadrinhar</a></li>
         <li class="nav-item"><a class="nav-link" href="<?= base_url('galeria/listar') ?>">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="<?= base_url('parceiro/listar') ?>">Apoiadores</a></li>
         <li class="nav-item"><a class="nav-link" href="<?= base_url('loja/listar') ?>">Loja</a></li>
         <li class="nav-item"><a class="nav-link" href="<?= base_url('resgates/listar') ?>">Resgates</a></li>
         <li class="nav-item"><a class="btn btn-danger" href="<?= base_url('/logout') ?>">Sair</a></li>
