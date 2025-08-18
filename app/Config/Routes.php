@@ -13,13 +13,8 @@ $routes = Services::routes();
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('PublicHome');
 $routes->setDefaultMethod('index');
-
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-// The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
-// where controller filters or CSRF protection are bypassed.
-// If you don't want to define all routes, please use the Auto Routing (Improved).
-// Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
 $routes->setAutoRoute(true);
 
 /*
@@ -58,14 +53,13 @@ service('auth')->routes($routes, [
 ]);
 
 // Protected Routes
-$routes->group('', ['filter' => 'session'], static function($routes) {
+$routes->group('', ['filter' => 'session'], static function ($routes) {
     //----- Galeria -----//
     $routes->get("/galeria/listar", "Galeria::list");
     $routes->get("/galeria/criar", "Galeria::create");
     $routes->post("/galeria/salvar", "Galeria::store");
     $routes->get("/galeria/editar/(:num)", "Galeria::edit/$1");
     $routes->post("/galeria/deletar/(:num)", "Galeria::delete/$1");
-
 
     //----- Apadrinhar -----//
     $routes->get("/apadrinhar/listar", "Apadrinhar::list");
@@ -94,9 +88,14 @@ $routes->group('', ['filter' => 'session'], static function($routes) {
     $routes->get('/resgates/editar/(:num)', 'Resgates::edit/$1');
     $routes->post('/resgates/deletar/(:num)', 'Resgates::delete/$1');
     $routes->get('/resgates/listar', 'Resgates::list');
+
+    //----- Parceiro -----//
+    $routes->get("/parceiro/list", "Parceiro::listar");
+    $routes->get("/parceiro/create", "Parceiro::create");
+    $routes->post("/parceiro/store", "Parceiro::store");
+    $routes->get("/parceiro/edit/(:num)", "Parceiro::edit/$1");
+    $routes->post("/parceiro/delete/(:num)", "Parceiro::delete/$1");
 });
-
-
 
 /*
  * --------------------------------------------------------------------
