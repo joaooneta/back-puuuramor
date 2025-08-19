@@ -16,7 +16,7 @@
                     <li><a href="<?= base_url('parceiros') ?>" class="text-light">Adotar</a></li>
                     <li><a href="<?= base_url('contatos') ?>" class="text-light">Contatos</a></li>
                     <li><a href="<?= base_url('apadrinhar') ?>" class="text-light">Apadrinhar</a></li>
-                    <li><a href="<?= base_url('transparencia') ?>" class="text-light">Transparência</a></li>
+                    <li><a href="<?= base_url('prestacao') ?>" class="text-light">Transparência</a></li>
                     <li><a href="<?= base_url('politica_de_adocao') ?>" class="text-light">Política de Adoção</a></li>
                 </ul>
             </div>
@@ -36,7 +36,7 @@
             <div class="col-md-3 mb-3">
                 <img src="assets/images/icons/IFSUL_LOGO_Color.svg" alt="Instituto Federal" class="img-fluid" style="max-width: 120px;">
                 <p class="mt-2 mb-0" style="font-size: 0.9rem;">Desenvolvido na disciplina de Extensão<br>
-                <small>IFSUl Campus Charqueadas</small>
+                    <small>IFSUl Campus Charqueadas</small>
                 </p>
             </div>
 

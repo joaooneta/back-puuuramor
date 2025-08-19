@@ -1,0 +1,226 @@
+ERROR - 2025-08-19 21:22:13 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistema_prod', 3306, '', 0)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\wamp64\www\projeto\back-puuuramor\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\wamp64\www\projeto\back-puuuramor\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\wamp64\www\projeto\back-puuuramor\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\wamp64\www\projeto\back-puuuramor\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\wamp64\www\projeto\back-puuuramor\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\wamp64\www\projeto\back-puuuramor\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\wamp64\www\projeto\back-puuuramor\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2025-08-19 21:23:08 --> Call to a member function routes() on null
+in APPPATH\Config\Routes.php on line 48.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:23:35 --> Call to a member function routes() on null
+in APPPATH\Config\Routes.php on line 48.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:23:36 --> Call to a member function routes() on null
+in APPPATH\Config\Routes.php on line 48.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:23:59 --> Call to a member function routes() on null
+in APPPATH\Config\Routes.php on line 48.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:24:12 --> Call to a member function routes() on null
+in APPPATH\Config\Routes.php on line 48.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:26:40 --> Call to a member function routes() on null
+in APPPATH\Config\Routes.php on line 48.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:26:43 --> Call to a member function routes() on null
+in APPPATH\Config\Routes.php on line 48.
+ 1 SYSTEMPATH\Router\RouteCollection.php(267): require()
+ 2 SYSTEMPATH\CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:32:54 --> Undefined variable $prestacoes
+in APPPATH\Views\prestacao-contas\list.php on line 45.
+ 1 APPPATH\Views\prestacao-contas\list.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prestacoes', 'C:\\wamp64\\www\\projeto\\back-puuuramor\\app\\Views\\prestacao-contas\\list.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\wamp64\\www\\projeto\\back-puuuramor\\app\\Views\\prestacao-contas\\list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao-contas/list', [], true)
+ 5 APPPATH\Controllers\PrestacaoContas.php(25): view('prestacao-contas/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->list()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:37:33 --> Invalid file: "prestacao-contas/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao-contas/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao-contas/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao-contas/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:37:53 --> Invalid file: "prestacao-contas/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao-contas/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao-contas/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao-contas/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:38:37 --> Invalid file: "prestacao-contas/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao-contas/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao-contas/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao-contas/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:38:41 --> Invalid file: "prestacao-contas/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao-contas/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao-contas/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao-contas/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:39:51 --> Invalid file: "prestacao/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:40:31 --> Invalid file: "prestacao/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:40:33 --> Invalid file: "prestacao/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:43:45 --> Invalid file: "prestacao/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:43:47 --> Invalid file: "prestacao/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:45:03 --> Invalid file: "prestacao/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:46:22 --> Invalid file: "prestacao/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:46:24 --> Invalid file: "prestacao/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+CRITICAL - 2025-08-19 21:49:31 --> Invalid file: "prestacao/criar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prestacao/criar.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestacao/criar', [], true)
+ 3 APPPATH\Controllers\PrestacaoContas.php(30): view('prestacao/criar')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PrestacaoContas->create()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestacaoContas))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')

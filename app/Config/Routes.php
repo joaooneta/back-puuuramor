@@ -29,8 +29,8 @@ $routes->get('/', 'PublicHome::index');
 $routes->get('/loja', 'Loja::index');
 $routes->get('/adotar', 'Adotar::index');
 $routes->get('/parceiros', 'Parceiros::index');
+$routes->get("/prestacao", "PrestacaoContas::index");
 $routes->get('/resgates', 'Resgates::index');
-$routes->get('/transparencia', 'Transparencia::index');
 $routes->get('/quero_ajudar', 'Quero_Ajudar::index');
 $routes->get('/galeria', 'Galeria::index');
 $routes->get('/galeria/exibir/(:num)', 'Galeria::exibir/$1');
@@ -95,6 +95,12 @@ $routes->group('', ['filter' => 'session'], static function ($routes) {
     $routes->post("/parceiro/store", "Parceiro::store");
     $routes->get("/parceiro/edit/(:num)", "Parceiro::edit/$1");
     $routes->post("/parceiro/delete/(:num)", "Parceiro::delete/$1");
+
+    //----- Prestacao de Contas -----//
+    $routes->get("/prestacao/listar", "PrestacaoContas::list");
+    $routes->get("/prestacao/criar", "PrestacaoContas::create");
+    $routes->post("/prestacao/salvar", "PrestacaoContas::store");
+    $routes->post("/prestacao/deletar/(:num)", "PrestacaoContas::delete/$1");
 });
 
 /*
