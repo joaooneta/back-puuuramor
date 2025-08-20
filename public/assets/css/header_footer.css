@@ -20,10 +20,10 @@ body {
   width: 60px;
   height: 60px;
   background-color: #fff;
-  -webkit-mask-image: url("../images/icons/Alternate3Logo1.svg");
+  -webkit-mask-image: url("../images/icons/PuuurAmorLogoNoText.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
-  mask-image: url("../images/icons/Alternate3Logo1.svg");
+  mask-image: url("../images/icons/PuuurAmorLogoNoText.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
   display: block;
@@ -152,7 +152,12 @@ footer a {
   }
 }
 
+footer ul li a {
+  font-size: 12px;
+}
+
 #resgates-section {
   margin-top: 80px;
   /* Adjusted for fixed navbar */
+
 }

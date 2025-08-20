@@ -1,0 +1,266 @@
+ERROR - 2025-08-20 18:38:39 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistema_prod', 3306, '', 0)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Resgates.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Resgates->index()
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resgates))
+#9 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Resgates.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Resgates->index()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resgates))
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#11 {main}
+CRITICAL - 2025-08-20 18:38:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resgates`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Resgates.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Resgates->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resgates))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+ERROR - 2025-08-20 18:38:52 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistema_prod', 3306, '', 0)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Resgates.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Resgates->index()
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resgates))
+#9 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Resgates.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Resgates->index()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resgates))
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#11 {main}
+CRITICAL - 2025-08-20 18:38:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resgates`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Resgates.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Resgates->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resgates))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+ERROR - 2025-08-20 18:39:20 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistema_prod', 3306, '', 0)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Resgates.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Resgates->index()
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resgates))
+#9 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Resgates.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Resgates->index()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resgates))
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#11 {main}
+CRITICAL - 2025-08-20 18:39:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resgates`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Resgates.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Resgates->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resgates))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+ERROR - 2025-08-20 18:39:26 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistema_prod', 3306, '', 0)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Adotar.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Adotar->index()
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adotar))
+#9 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Adotar.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Adotar->index()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adotar))
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#11 {main}
+CRITICAL - 2025-08-20 18:39:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `animais`
+WHERE `categoria` = :categoria:', [...], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Adotar.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Adotar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adotar))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+ERROR - 2025-08-20 18:39:50 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistema_prod', 3306, '', 0)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Adotar.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Adotar->index()
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adotar))
+#9 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Adotar.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Adotar->index()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adotar))
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#11 {main}
+CRITICAL - 2025-08-20 18:39:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `animais`
+WHERE `categoria` = :categoria:', [...], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Adotar.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Adotar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Adotar))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')
+ERROR - 2025-08-20 18:40:19 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sistema_prod', 3306, '', 0)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Galeria.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Galeria->index()
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Galeria))
+#9 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\wamp64\www\projeto\back-puuuramor\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\projeto\back-puuuramor\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\wamp64\www\projeto\back-puuuramor\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\wamp64\www\projeto\back-puuuramor\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\wamp64\www\projeto\back-puuuramor\app\Controllers\Galeria.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(932): App\Controllers\Galeria->index()
+#7 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Galeria))
+#8 C:\wamp64\www\projeto\back-puuuramor\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\projeto\back-puuuramor\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\wamp64\www\projeto\back-puuuramor\system\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\p...')
+#11 {main}
+CRITICAL - 2025-08-20 18:40:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `galeria`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Galeria.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Galeria->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Galeria))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\wamp64\\www\\projeto\\back-puuuramor\\public\\index.php')

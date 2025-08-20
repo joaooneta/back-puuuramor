@@ -3,8 +3,13 @@ body {
 }
 
 .resgates-imgs img {
-    height: 300px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    /* Mantém proporção original */
+    object-fit: contain;
+    /* Mostra a imagem inteira */
+    max-height: 500px;
+    /* Evita imagens gigantes */
     transition: transform 0.3s ease;
 }
 

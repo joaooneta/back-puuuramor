@@ -1,12 +1,12 @@
 <footer class="text-light py-4 mt-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-3">
                 <h5>Projeto Puuur Amor</h5>
                 <p>O Projeto Puuur Amor é uma iniciativa independente que atua em Charqueadas/RS com foco no resgate, acolhimento e adoções responsáveis de gatos em situação de abandono.</p>
             </div>
 
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-3">
                 <h5>Categorias</h5>
                 <ul class="list-unstyled">
                     <li><a href="<?= base_url('adotar') ?>" class="text-light">Adotar</a></li>
@@ -16,11 +16,11 @@
                     <li><a href="<?= base_url('parceiros') ?>" class="text-light">Adotar</a></li>
                     <li><a href="<?= base_url('contatos') ?>" class="text-light">Contatos</a></li>
                     <li><a href="<?= base_url('apadrinhar') ?>" class="text-light">Apadrinhar</a></li>
-                    <li><a href="<?= base_url('transparencia') ?>" class="text-light">Transparência</a></li>
+                    <li><a href="<?= base_url('prestacao') ?>" class="text-light">Transparência</a></li>
                     <li><a href="<?= base_url('politica_de_adocao') ?>" class="text-light">Política de Adoção</a></li>
                 </ul>
             </div>
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-3">
                 <h5>Contato</h5>
                 <ul class="list-unstyled">
                     <li>WhatsApp: <a href="https://api.whatsapp.com/send?phone=5551981536015"
@@ -31,6 +31,13 @@
                     <li>Facebook: <a href="https://www.facebook.com/projeto.puuuramor/"
                             class="text-light text-decoration-underline">Projeto Puuur Amor</a></li>
                 </ul>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <img src="assets/images/icons/IFSUL_LOGO_Color.svg" alt="Instituto Federal" class="img-fluid" style="max-width: 120px;">
+                <p class="mt-2 mb-0" style="font-size: 0.9rem;">Desenvolvido na disciplina de Extensão<br>
+                    <small>IFSUl Campus Charqueadas</small>
+                </p>
             </div>
 
         </div>

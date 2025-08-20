@@ -33,7 +33,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="assets/images/icons/Alternate3Logo.svg" alt="Imagem do Projeto"
+                    <img src="assets/images/icons/PuuurAmorLogoTextColored.svg" alt="Imagem do Projeto"
                         class="img-fluid rounded shadow" style="max-height: 300px;">
                 </div>
 
@@ -138,7 +138,7 @@
             <div class="col-lg-8 text-center">
                 <h2 class="fw-bold mt-3">Fale com a Gente</h2>
                 <p class="lead">Tem dúvidas, quer colaborar ou conhecer mais sobre o projeto? Entre em contato:</p>
-                <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+                <div class="d-flex justify-content-center gap-3 flex-wrap mt-4 mb-4">
                     <a href="https://api.whatsapp.com/send?phone=5551981536015" target="_blank" class="btn btn-outline-success">
                         <i class="bi bi-whatsapp me-1"></i> WhatsApp
                     </a>
@@ -155,5 +155,6 @@
 
     <?= view('templates/footer') ?>
 </body>
+
 
 </html>

@@ -2,6 +2,8 @@
 <html lang="pt-BR">
 
 <head>
+    <meta name="authors" content="Alessandra Freitas Pacheco, Alexandre Araújo da Silva, André Luis Lopes Martins, Bruno Batista de Jesus, Felipe Araújo da Silva, Henrique Machado Guimarães, João Matheus Oneta, Leonardo Almeida Pereira, Pedro Leotte Bersch">
+    <meta name="description" content="Site desenvolvido por alunos da disciplina de Extensão I do IFSul Campus Charqueadas - 2025.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puuuramor | ONG de Resgate Animal</title>

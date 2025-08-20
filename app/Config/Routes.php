@@ -13,13 +13,8 @@ $routes = Services::routes();
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('PublicHome');
 $routes->setDefaultMethod('index');
-
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-// The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
-// where controller filters or CSRF protection are bypassed.
-// If you don't want to define all routes, please use the Auto Routing (Improved).
-// Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
 $routes->setAutoRoute(true);
 
 /*
@@ -34,8 +29,8 @@ $routes->get('/', 'PublicHome::index');
 $routes->get('/loja', 'Loja::index');
 $routes->get('/adotar', 'Adotar::index');
 $routes->get('/parceiros', 'Parceiros::index');
+$routes->get("/prestacao", "PrestacaoContas::index");
 $routes->get('/resgates', 'Resgates::index');
-$routes->get('/transparencia', 'Transparencia::index');
 $routes->get('/quero_ajudar', 'Quero_Ajudar::index');
 $routes->get('/galeria', 'Galeria::index');
 $routes->get('/galeria/exibir/(:num)', 'Galeria::exibir/$1');
@@ -47,6 +42,7 @@ $routes->get('/loja', 'Loja::index');
 $routes->get('loja/exibir/(:num)', 'Loja::exibir/$1');
 $routes->get('/resgates', 'Resgates::index');
 $routes->get('/resgates/exibir/(:num)', 'Resgates::exibir/$1');
+$routes->get('/politica_de_adocao', 'Politica_de_Adocao::index');
 
 // Shield Routes
 service('auth')->routes($routes);
@@ -58,14 +54,13 @@ service('auth')->routes($routes, [
 ]);
 
 // Protected Routes
-$routes->group('', ['filter' => 'session'], static function($routes) {
+$routes->group('', ['filter' => 'session'], static function ($routes) {
     //----- Galeria -----//
     $routes->get("/galeria/listar", "Galeria::list");
     $routes->get("/galeria/criar", "Galeria::create");
     $routes->post("/galeria/salvar", "Galeria::store");
     $routes->get("/galeria/editar/(:num)", "Galeria::edit/$1");
     $routes->post("/galeria/deletar/(:num)", "Galeria::delete/$1");
-
 
     //----- Apadrinhar -----//
     $routes->get("/apadrinhar/listar", "Apadrinhar::list");
@@ -94,9 +89,20 @@ $routes->group('', ['filter' => 'session'], static function($routes) {
     $routes->get('/resgates/editar/(:num)', 'Resgates::edit/$1');
     $routes->post('/resgates/deletar/(:num)', 'Resgates::delete/$1');
     $routes->get('/resgates/listar', 'Resgates::list');
+
+    //----- Parceiro -----//
+    $routes->get("/parceiro/list", "Parceiro::listar");
+    $routes->get("/parceiro/create", "Parceiro::create");
+    $routes->post("/parceiro/store", "Parceiro::store");
+    $routes->get("/parceiro/edit/(:num)", "Parceiro::edit/$1");
+    $routes->post("/parceiro/delete/(:num)", "Parceiro::delete/$1");
+
+    //----- Prestacao de Contas -----//
+    $routes->get("/prestacao/listar", "PrestacaoContas::list");
+    $routes->get("/prestacao/criar", "PrestacaoContas::create");
+    $routes->post("/prestacao/salvar", "PrestacaoContas::store");
+    $routes->post("/prestacao/deletar/(:num)", "PrestacaoContas::delete/$1");
 });
-
-
 
 /*
  * --------------------------------------------------------------------
