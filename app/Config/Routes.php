@@ -42,6 +42,7 @@ $routes->get('/loja', 'Loja::index');
 $routes->get('loja/exibir/(:num)', 'Loja::exibir/$1');
 $routes->get('/resgates', 'Resgates::index');
 $routes->get('/resgates/exibir/(:num)', 'Resgates::exibir/$1');
+$routes->get('/politica_de_adocao', 'Politica_de_Adocao::index');
 
 // Shield Routes
 service('auth')->routes($routes);

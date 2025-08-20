@@ -152,6 +152,10 @@ footer a {
   }
 }
 
+footer ul li a {
+  font-size: 12px;
+}
+
 #resgates-section {
   margin-top: 80px;
   /* Adjusted for fixed navbar */

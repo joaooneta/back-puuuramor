@@ -27,8 +27,11 @@
         </article>
 
         <div class="text-center my-4">
-            <img src="<?= base_url('assets/images/resgates.png') ?>" alt="Imagem ilustrativa de resgates" class="img-fluid rounded shadow" style="max-width: 500px;">
+            <img src="<?= base_url('assets/images/resgates.png') ?>"
+                alt="Imagem ilustrativa de resgates"
+                class="img-fluid rounded shadow mx-auto d-block">
         </div>
+
 
         <section aria-label="Lista de resgates com fotos antes e depois">
             <div class="row g-4">
